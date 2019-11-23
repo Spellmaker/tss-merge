@@ -10,6 +10,6 @@ class InMemoryMergeProviderTest : BaseMergeTest() {
 
     @Test
     fun testAll() {
-        runAllTests(InMemoryMergeProvider())
+        runAllTests { mergeInMemory(it) }
     }
 }
