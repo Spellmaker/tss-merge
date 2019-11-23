@@ -51,7 +51,7 @@ Input: List _L_ of tuples [_a1_, _b1_], ...
 3) For all entries _E_ in the list
     4) Let [_a1_, _b1_] = _Current_, [_a2_, _b2_] = _E_ (For notational purposes)
     5) If _b1_ >= _b2_, let _Current_ be the merged entry [_a1_, _b2_] 
-    6) Otherwise, let _Current_ be [_a2_, _b2_], add _Current_ to _Result_
+    6) Otherwise, let _Current_ be [_a2_, max(_b1_, _b2_)], add _Current_ to _Result_
 7) Add _Current_ to _Result_ and return _Result_
     
 Runtime-wise, sorting using an optimal sort algorithm yields a complexity of O(n log n),
