@@ -19,4 +19,6 @@ data class Interval(val first : Long, val second : Long) {
             throw IllegalArgumentException("Expected first index to be less or equal than the second, got $first and $second");
         }
     }
+
+    override fun toString() = "[$first, $second]"
 }

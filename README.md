@@ -81,3 +81,14 @@ Only considering memory, this could be done as follows:
 
 If parallelization is also of interest, separate chunks of the input can be merged in parallel and a final task processes
 the single result sets.
+
+### Running and building
+
+Build the jar via maven 
+
+> mvn package
+
+Run the jar in the target folder via
+> java -jar tss-merge-1.0-SNAPSHOT-jar-with-dependencies.jar
+
+This will start a simple CLI demo-ing the implementation

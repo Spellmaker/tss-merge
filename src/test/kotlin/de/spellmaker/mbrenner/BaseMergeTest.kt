@@ -6,7 +6,7 @@ import kotlin.test.assertEquals
 /**
  * This class provides testcases for {@link MergeProvider} functions, independent of the actual implementation
  */
-open class BaseMergeTest(val sut : IntervalMerge) {
+abstract class BaseMergeTest(val sut : IntervalMerge) {
 
     /**
      * Test correctness of the provided example
