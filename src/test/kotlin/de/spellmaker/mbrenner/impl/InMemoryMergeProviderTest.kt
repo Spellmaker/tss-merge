@@ -6,10 +6,4 @@ import org.junit.Test
 /**
  * Tests the in memory merge provider
  */
-class InMemoryMergeProviderTest : BaseMergeTest() {
-
-    @Test
-    fun testAll() {
-        runAllTests { mergeInMemory(it) }
-    }
-}
+class InMemoryMergeProviderTest : BaseMergeTest(::mergeInMemory)
